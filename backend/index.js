@@ -14,7 +14,7 @@ const RANGE = 'A2:E2'; // Comienza en la segunda fila para no sobrescribir encab
 
 // Autenticación con Google
 const auth = new google.auth.GoogleAuth({
-  keyFile: '/etc/secrets/gen-lang-client-0256808647-5cca2ba37d8b', // Archivo de credenciales como Secret File en Render
+  keyFile: '/etc/secrets/gen-lang-client-0256808647-5cca2ba37d8b.json', // Archivo de credenciales como Secret File en Render
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
