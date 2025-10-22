@@ -350,9 +350,10 @@ function App() {
 			method: 'POST',
 			body: data,
 		});
-		if (res.ok) {
-			setShowSuccess(true);
-		} else {
+								if (res.ok) {
+									setShowSuccess(true);
+									setFormData({ nombre: '', apellido: '', correo: '', telefono: '', comprobante: null });
+								} else {
 			const errorText = await res.text();
 			console.error('Error backend:', errorText);
 			alert('Error al enviar la inscripción.');
