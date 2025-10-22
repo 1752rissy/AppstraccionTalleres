@@ -346,7 +346,7 @@ function App() {
 		data.append('telefono', formData.telefono);
 		data.append('comprobante', formData.comprobante);
 	try {
-		const res = await fetch('http://localhost:4000/inscripcion', {
+				const res = await fetch('https://appstracciontalleres.onrender.com/inscripcion', {
 			method: 'POST',
 			body: data,
 		});
